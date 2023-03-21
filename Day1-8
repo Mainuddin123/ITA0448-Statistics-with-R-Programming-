@@ -1,0 +1,9 @@
+ x = c(10, 20, 30, 20, 20, 25, 9, 26)
+> print("Original Vectors:")
+[1] "Original Vectors:"
+> print(x)
+[1] 10 20 30 20 20 25  9 26
+> print("Find second highest value in a given vector:")
+[1] "Find second highest value in a given vector:"
+> l = length(x)
+> print(sort(x, partial = l-1)[l-1])
