@@ -1,0 +1,33 @@
+setClass("ABOUT_FRUITS", fruits <- list(name="character", Quantity="numeric",cost="numeric"))
+
+fruit <- new("ABOUT_FRUITS", name = "banana", Quantity = 25, cost = 250)
+
+fruit
+
+
+fruits <- list(name=" apple",Quantity= 3,cost=100)
+class(fruits) <- "ABOUT_FRUITS"
+fruits
+
+Output:
+An object of class "ABOUT_FRUITS"
+Slot "name":
+[1] "banana"
+
+Slot "Quantity":
+[1] 25
+
+Slot "cost":
+[1] 250
+
+$name
+[1] " apple"
+
+$Quantity
+[1] 3
+
+$cost
+[1] 100
+
+attr(,"class")
+[1] "ABOUT_FRUITS"
