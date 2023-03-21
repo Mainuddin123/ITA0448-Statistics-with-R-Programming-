@@ -1,0 +1,9 @@
+x <- c('green', 'green', 'yellow', 'red', 'red', 'red','green')
+       fac <- factor(x)
+print(fac)
+print(nlevels(fac))
+
+Output:
+1] green  green  yellow red    red    red    green 
+Levels: green red yellow
+[1] 3
