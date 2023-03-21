@@ -1,0 +1,56 @@
+x = c(10, 20, 30, 20, 20, 25, 9, 26,38,40)
+
+x = vector("numeric", 5)
+print("Numeric Type:")
+
+[1] "Numeric Type:"
+print(x)
+
+[1]0 0 0 0 0
+
+c = vector("complex", 5)
+print("Complex Type:")
+
+[1] "Complex Type:"
+print(c)
+
+[1] 0+0i 0+0i 0+0i 0+0i 0+0i
+
+l = vector("logical", 5)
+print("Logical Type:")
+
+[1]"Logical Type:"
+print(l)
+
+[1] FALSE FALSE FALSE FALSE FALSE
+
+chr = vector("character", 5)
+print("Character Type:")
+
+[1]"Character Type:
+print(chr)
+[1]"" "" "" "" "" 
+
+
+ x = vector("numeric", 10)
+> print("Numeric Type:")
+[1] "Numeric Type:"
+> print(x)
+[1] 0 0 0 0 0 0 0 0 0 0
+> print("Complex Type:")
+[1] "Complex Type:"
+> c = vector("complex", 10)
+> print("Complex Type:")
+[1] "Complex Type:"
+> print(c)
+[1] 0+0i 0+0i 0+0i 0+0i 0+0i 0+0i 0+0i 0+0i 0+0i 0+0i
+> print("Logical Type:")
+[1] "Logical Type:"
+> l = vector("logical", 10)
+> print(l)
+[1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+> chr = vector("character", 10)
+> print("Character Type:")
+[1] "Character Type:"
+> print(chr)
+[1] "" "" "" "" "" "" "" "" "" ""
