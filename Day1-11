@@ -1,0 +1,28 @@
+
+mons_v = c("March","April","January","November","January", "September","October","September","November","August","February", "January","November","November","February","May","August","February", "July","December","August","August","September","November","September", "February","April")
+print("Original vector:")
+print(mons_v) f = factor(mons_v)
+print("Ordered factors of the said vector:")
+print(f)
+print(table(f))
+
+Output:
+  “March” "May"   "August"    "February"  "July"      "December" 
+[21] "August"    "August"    "September" "November"  "September"
+[26] "February"  "April"
+[1] "Original vector:"
+[1] "March"     "April"     "January"   "November"  "January"  
+ [6] "September" "October"   "September" "November"  "August"   
+[11] "February"  "January"   "November"  "November"  "February" 
+[16]
+[1] "Ordered factors of the said vector:"
+ [1] March     April     January   November  January   September October  
+ [8] September November  August    February  January   November  November 
+[15] February  May       August    February  July      December  August   
+[22] August    September November  September February  April    
+11 Levels: April August December February January July March ... September
+
+  April    August  December  February   January      July     March 
+        2         4         1         4         3         1         1 
+      May  November   October September 
+        1         5         1         4 
