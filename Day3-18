@@ -1,0 +1,39 @@
+8 Write a R program to reorder an given data frame by column name.
+Output:
+[1] "Original dataframe:"
+ name score attempts qualify
+1 Anastasia 12.5 1 yes
+2 Dima 9.0 3 no
+3 Katherine 16.5 2 yes
+4 James 12.0 3 no
+5 Emily 9.0 2 no
+6 Michael 20.0 3 yes
+7 Matthew 14.5 1 yes
+8 Laura 13.5 1 no
+9 Kevin 8.0 2 no
+10 Jonas 19.0 1 yes
+[1] "Reorder by column name:"
+ name attempts score qualify
+1 Anastasia 1 12.5 yes
+2 Dima 3 9.0 no
+3 Katherine 2 16.5 yes
+4 James 3 12.0 no
+5 Emily 2 9.0 no
+6 Michael 3 20.0 yes
+7 Matthew 1 14.5 yes
+8 Laura 1 13.5 no
+9 Kevin 2 8.0 no
+10 Jonas 1 19.0 yes
+ source code
+df <- data.frame(
+ name = c("Anastasia", "Dima", "Katherine", "James", "Emily", 
+ "Michael", "Matthew", "Laura", "Kevin", "Jonas"),
+ score = c(12.5, 9.0, 16.5, 12.0, 9.0, 20.0, 14.5, 13.5, 8.0, 19.0),
+ attempts = c(1, 3, 2, 3, 2, 3, 1, 1, 2, 1),
+ qualify = c("yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes")
+)
+cat("[1] \"Original dataframe:\"\n")
+print(df)
+cat("\n[1] \"Reorder by column name:\"\n")
+df <- df[, c("name", "attempts", "score", "qualify")]
+print(df)
