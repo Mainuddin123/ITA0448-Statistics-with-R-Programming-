@@ -1,0 +1,32 @@
+1. How to use the cbind() and rbind() in data frame for the fields city and zipcodedatas using 
+vector and data frame.
+Create a vectors:
+cbind() function:
+Output:
+city zipcode
+[1] delhi 123456
+[2] bangalore 789654
+[3] chennai 698748
+[4] mumbai456986
+city<-c("delhi","bangalore","chennai","mumbai")
+zipcode<-c(123456,789654,698748,456986)
+cbind(city,zipcode)
+rbind() function:
+Output: 
+city zipcode
+[1] delhi 123456
+[2] bangalore 789654
+[3] chennai 698748
+[4] mumbai456986
+[5] punjab 456978
+[6] kerala 569875
+city<-c("delhi","bangalore","chennai","mumbai")
+zipcode<-c(123456,789654,698748,456986)
+cbind(city,zipcode)
+r1<-c("delhi",123456)
+r2<-c("bangalore",789654)
+r3<-c("chennai",698748)
+r4<-c("mumbai",456986)
+r5<-c("punjab",456978)
+r6<-c("kerala",569875)
+rbind(r1,r2,r3,r4,r5,r6)
