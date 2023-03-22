@@ -1,0 +1,24 @@
+2. Create First Dataset with variables
+● surname
+● nationality
+Create Second Dataset with variables
+● surname
+● movies
+The common key variable is surname. How to merge both data and check if the dimensionality is 
+7x3.
+Output:
+surname nationality movies
+1 Hitchcock UK Psycho
+2 Hitchcock UK North by Northwest
+3 Polanski Poland Chinatown
+4 Scorsese US Taxi Driver
+5 Spielberg US Super 8
+6 Spielberg US Catch Me If You Can
+ 7 Tarantino US Reservoir Dogs
+Source Code:
+df1 <- data.frame(surname = c("Hitchcock", "Polanski", "Scorsese"),
+ nationality = c("UK", "Poland", "US"))
+df2 <- data.frame(surname = c("Hitchcock", "Hitchcock", "Polanski"),
+ movies = c("Psycho", "North by Northwest", "Chinatown"))
+merged_df <- merge(df1, df2)
+dim(merged_df)
