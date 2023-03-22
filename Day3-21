@@ -1,0 +1,18 @@
+Write a R program to find elements come only once that are common to both given data 
+frames.
+Output:
+[1] "Original Dataframes"
+[1] "a" "b" "c" "d" "e"
+[1] "d" "e" "f" "g"
+[1] "Find elements come only once that are common to both given dataframes:"
+[1] "a" "b" "c" "d" "e" "f" "g"
+source code:
+df1 <- data.frame(x = c("a", "b", "c", "d", "e"))
+df2 <- data.frame(x = c("d", "e", "f", "g"))
+cat("Original Dataframes\n")
+print(df1$x)
+print(df2$x)
+common <- intersect(df1$x, df2$x)
+result <- unique(c(df1$x[df1$x %in% common], df2$x[df2$x %in% common]))
+cat("Find elements come only once that are common to both given data frames:\n")
+print(result)
