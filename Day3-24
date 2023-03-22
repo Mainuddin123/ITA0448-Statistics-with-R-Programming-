@@ -1,0 +1,33 @@
+Write a R program to create a data frame using two given vectors and display the 
+duplicated elements and unique rows of the said data frame.
+Output:
+[1] "Original data frame:"
+a b
+1 10 10
+2 20 30
+3 10 10
+4 10 20
+5 40 0
+6 50 50
+7 20 30
+8 30 30
+[1] "Duplicate elements of the said data frame:"
+[1] FALSE FALSE TRUE FALSE FALSEFALSE TRUE FALSE
+[1] "Unique rows of the said data frame:"
+a b
+1 10 10
+2 20 30
+4 10 20
+5 40 0
+6 50 50
+8 30 30 
+source code:
+vec1 <- c(10, 20, 10, 10, 40, 50, 20, 30)
+vec2 <- c(10, 30, 10, 20, 0, 50, 30, 30)
+df <- data.frame(a = vec1, b = vec2)
+cat("Original data frame:\n")
+print(df)
+cat("Duplicate elements of the said data frame:\n")
+print(duplicated(df))
+cat("Unique rows of the said data frame:\n")
+print(unique(df))
