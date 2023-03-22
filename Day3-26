@@ -1,0 +1,30 @@
+Write a R program to call the (built-in) dataset airquality. Remove the variables 'Solar.R' 
+and 'Wind' and display the data frame.
+Output:
+[1] "Original data: Daily air quality measurements in New York, May to September 1973."
+ Ozone Solar.R Wind Temp Month Day
+1 41 190 7.4 67 5 1
+2 36 118 8.0 72 5 2
+3 12 149 12.6 74 5 3
+4 18 313 11.5 62 5 4
+5 NA NA 14.3 56 5 5
+.........
+152 18 131 8.0 76 9 29
+153 20 223 11.5 68 9 30
+[1] "data.frame after removing 'Solar.R' and 'Wind' variables:"
+ Ozone Temp Month Day
+1 41 67 5 1
+2 36 72 5 2
+3 12 74 5 3
+4 18 62 5 4
+5 NA 56 5 5
+.........
+152 18 76 9 29
+153 20 68 9 30
+source code :
+data("airquality")
+airquality_new <- airquality[, c("Ozone", "Temp", "Month", "Day")]
+cat("Original data: Daily air quality measurements in New York, May to September 1973.\n")
+head(airquality)
+cat("\ndata.frame after removing 'Solar.R' and 'Wind' variables:\n")
+head(airquality_new)
