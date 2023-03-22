@@ -1,0 +1,16 @@
+Write a R program to find elements which are present in two given data frames.
+Output:
+[1] "Original Dataframes"
+[1] "a" "b" "c" "d" "e"
+[1] "d" "e" "f" "g"
+[1] "Elements which are present in both dataframe:"
+[1] "d" "e"
+source code:
+df1 <- data.frame(x = c("a", "b", "c", "d", "e"))
+df2 <- data.frame(x = c("d", "e", "f", "g"))
+cat("Original Dataframes\n")
+print(df1$x)
+print(df2$x)
+common <- intersect(df1$x, df2$x)
+cat("Elements which are present in both data frames:\n")
+print(common)
