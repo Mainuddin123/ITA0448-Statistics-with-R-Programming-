@@ -1,0 +1,39 @@
+Write a R program to replace NA values with 3 in a given data frame.
+Output:
+[1] "Original dataframe:"
+ name score attempts qualify
+1 Anastasia 12.5 1 yes
+2 Dima 9.0 NA no
+3 Katherine 16.5 2 yes
+4 James 12.0 NA no
+5 Emily 9.0 2 no
+6 Michael 20.0 NA yes
+7 Matthew 14.5 1 yes
+8 Laura 13.5 NA no
+9 Kevin 8.0 2 no
+10 Jonas 19.0 1 yes
+[1] "After removing NA with 3, the said dataframe becomes:"
+ name score attempts qualify
+1 Anastasia 12.5 1 yes
+2 Dima 9.0 3 no
+3 Katherine 16.5 2 yes
+4 James 12.0 3 no
+5 Emily 9.0 2 no
+6 Michael 20.0 3 yes
+7 Matthew 14.5 1 yes
+8 Laura 13.5 3 no
+9 Kevin 8.0 2 no
+10 Jonas 19.0 1 yes
+ source code:
+ df <- data.frame(
+ name = c("Anastasia", "Dima", "Katherine", "James", "Emily", 
+ "Michael", "Matthew", "Laura", "Kevin", "Jonas"),
+ score = c(12.5, 9.0, 16.5, 12.0, 9.0, 20.0, 14.5, 13.5, 8.0, 19.0),
+ attempts = c(1, NA, 2, NA, 2, NA, 1, NA, 2, 1),
+ qualify = c("yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes")
+)
+cat("Original dataframe:\n")
+print(df)
+df[is.na(df)] <- 3
+cat("After removing NA with 3, the said dataframe becomes:\n")
+print(df)
