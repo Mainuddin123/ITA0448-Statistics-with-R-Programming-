@@ -1,0 +1,19 @@
+3. Write a R program to create an empty data frame.
+Output: 
+[1] "Structure of the empty dataframe:"
+'data.frame': 0 obs. of 5 variables:
+$ Ints : int 
+$ Doubles : num 
+$ Characters: chr
+$ Logicals :logi
+$ Factors : Factor w/ 0 levels: 
+NULL
+Source Code:
+df = data.frame(Ints=integer(),
+ Doubles=double(),
+ Characters=character(),
+ Logicals=logical(),
+ Factors=factor(),
+ stringsAsFactors=FALSE)
+print("Structure of the empty dataframe:")
+print(str(df))
