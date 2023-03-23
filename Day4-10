@@ -1,0 +1,11 @@
+(ii). Calculate the skewness of the normal distribution along with kurtosis and
+interpret your results.
+
+source code:
+library(moments)
+skewness(random_numbers)
+kurtosis(random_numbers)
+
+output :
+[1] -0.003522449
+[1] 0.05940867
