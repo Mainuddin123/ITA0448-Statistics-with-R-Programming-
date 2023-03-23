@@ -1,0 +1,6 @@
+library(ggplot2)
+ggplot(mtcars, aes(x = disp, y = mpg)) + 
+  geom_point() + 
+  labs(x = "Engine size (cubic inches)", y = "Miles per gallon")
+
+cor(mtcars$disp, mtcars$mpg)
