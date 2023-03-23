@@ -1,0 +1,6 @@
+source code:
+
+cor(preferences[2:3,])
+
+ output :
+0.8586
