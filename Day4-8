@@ -1,0 +1,8 @@
+
+source code :
+library(moments)
+skewness(travel_time)
+kurtosis(travel_time)
+
+output :
+[1] -0.1299792
