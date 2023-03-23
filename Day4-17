@@ -1,0 +1,12 @@
+The demand for a product on each of 20 days was as follows, (in units). 3, 12, 7, 17, 3, 14,
+
+SOURCE CODE:
+demand <- c(3, 12, 7, 17, 3, 14, 9, 6, 11, 10, 1, 4, 19, 7, 15, 6, 9, 12, 12, 8)
+
+mean_demand <- mean(demand)
+
+
+cat("Arithmetic mean of demand is:", mean_demand)
+
+output :
+ mean is: 9.2
