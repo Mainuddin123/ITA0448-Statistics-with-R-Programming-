@@ -1,0 +1,6 @@
+Generate a sample of 5000 random numbers and create a normal distribution
+with a mean value of 70 and respectively fix the Standard deviation to
+
+source code :
+set.seed(123) # set seed for reproducibility
+random_numbers <- rnorm(5000, mean=70, sd=10)
