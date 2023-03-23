@@ -1,0 +1,19 @@
+SOURCE CODE:
+                                    str(mpg)
+This code will output the structure of the "mpg" dataset, including the data type of each variable. Based on this output, we can identify the categorical variables as those with a data type of "factor" or "character," while the continuous variables will have a data type of "numeric." Here is the list of variables and their data types:
+
+Categorical variables:
+
+manufacturer (character)
+model (character)
+displ (numeric, but can be treated as categorical if we group by engine size)
+year (numeric)
+cyl (numeric)
+trans (character)
+drv (character)
+class (character)
+Continuous variables:
+
+cty (numeric)
+hwy (numeric)
+Based on this information, we can conclude that there are eight categorical variables and two continuous variables in the "mpg" dataset.
