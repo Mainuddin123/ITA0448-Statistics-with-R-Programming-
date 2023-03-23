@@ -1,0 +1,7 @@
+ 
+source code:
+cat("Variance of age is", age_var, "\n")
+cat("Variance of %fat is", fat_perc_var, "\n")
+output:
+Variance of age is 169.7353 
+Variance of %fat is 115.6055 
