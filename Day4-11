@@ -1,0 +1,7 @@
+(iii)Write suitable R code to compute the median of the following values.
+12,7,3,4.2,18,2,54, -21,8, -5
+
+source code :
+
+values <- c(12, 7, 3, 4.2, 18, 2, 54, -21, 8, -5)
+median(values)
