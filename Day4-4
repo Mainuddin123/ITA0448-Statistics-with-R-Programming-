@@ -1,0 +1,7 @@
+1.Line chart: To draw a line chart, we use the geom_line() function.
+
+2.Boxplot: To draw a boxplot, we use the geom_boxplot() function.
+
+3.Histogram: To draw a histogram, we use the geom_histogram() function.
+
+4.Area chart: To draw an area chart, we use the geom_area() function.
