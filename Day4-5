@@ -1,0 +1,7 @@
+program : 
+        
+           preferences <- matrix(c(18, 22, 20, 2, 28, 40, 20, 10, 40), nrow=3, byrow=TRUE)
+cov(preferences[2:3,])
+output :
+
+>180
