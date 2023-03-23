@@ -1,0 +1,16 @@
+The following table of grouped data represents the weight (in kg) of 100 students. Calculate
+the mean weight for a student.
+
+Weight (pounds) Number of Student
+21kg 8
+30kg 25
+56kg 45
+73kg 18
+110kg 4
+ 
+source code:
+sum_weights <- 46.2972*8 + 66.1387*25 + 123.4587*45 + 160.9376*18 + 242.5082*4
+mean_weight <- sum_weights / 100
+mean_weight
+code:
+>76.138
