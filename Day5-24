@@ -1,0 +1,17 @@
+first_two_rows <- df[1:2, ] 
+first_two_rows 
+ 
+
+c.Write a R program to extract 3rd and 5th rows with 1st and 3rd columns from a given data frame
+SOURCE CODE:
+ third_and_fifth_rows <- df[c(3, 5), c(1, 3)] third_and_fifth_rows 
+
+d. Find the average score with respect to first, second, and third attempts. Don’t use any special in
+build function for this task.
+SOURCE CODE:
+   sums <- c(0, 0, 0) for (i in 1:nrow(df)) { 
+  sums[df$attempts[i]] <- sums[df$attempts[i]] + df$score[i] } 
+ 
+averages <- sums / table(df$attempts) 
+ 
+averages 
