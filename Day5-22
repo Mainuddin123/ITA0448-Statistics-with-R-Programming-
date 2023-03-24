@@ -1,0 +1,31 @@
+a. To find the multiplication table (from 1 to 10)
+SOURCE CODE:
+ for (i in 1:10) { for (j in 1:10) { cat(i*j, "\t") 
+} cat("\n") 
+} 
+
+b.To find factorial of number
+SOURCE CODE:
+ factorial <- function(n) { if (n == 0) { return (1) } else { 
+return (n * factorial(n-1)) 
+} 
+} 
+c. To check if the input number is odd or even
+SOURCE CODE:
+is_odd_or_even <- function(n) { if (n %% 2 == 0) { return ("Even") } else { return ("Odd") 
+} 
+} 
+
+d. To check if the input number is prime or not
+SOURCE CODE:
+a.is_prime <- function(n) { if (n < 2) { return ("Not Prime") 
+} for (i in 2:(n-1)) { if (n %% i == 0) { return ("Not Prime") 
+} } 
+return ("Prime") 
+} 
+
+e. To find sum of natural numbers up-to 10, without formula using loop statement
+
+SOURCE CODE:
+for (i in 1:10) { sum <- sum + i 
+} cat("Sum of Natural Numbers up to 10:", sum) 
