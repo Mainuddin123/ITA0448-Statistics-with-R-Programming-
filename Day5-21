@@ -1,0 +1,33 @@
+> Mark1=c(35,45,67) 
+> Mark2=c(56,89,99)  
+> Mark3=c(78,75,83) 
+> df <- data.frame(Mark1,Mark2,Mark3) 
+> sapply(df,min) 
+Mark1 Mark2 Mark3  
+   35    56    75  
+> sapply(df,max) 
+Mark1 Mark2 Mark3  
+   67    99    83  
+> sapply(df,avg) 
+Error in match.fun(FUN) : object 'avg' not found 
+> sapply(df,mean) 
+   Mark1    Mark2    Mark3  
+49.00000 81.33333 78.66667  
+> 1apply(df,min) 
+Error: unexpected symbol in "1apply" 
+> lapply(df,mean) 
+$Mark1 
+[1] 49 
+ 
+$Mark2 
+[1] 81.33333 
+ 
+$Mark3 
+[1] 78.66667 
+> lapply(df,max) 
+$Mark1 
+[1] 67 
+$Mark2 
+[1] 99 
+$Mark3 
+[1] 83 
