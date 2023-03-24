@@ -1,0 +1,5 @@
+> x= sample(-50:50, 10, replace=TRUE)
+> print(x)
+
+OUTPUT:
+[1]  31  45  47 -40  37 -19  10  -9 -14  49
