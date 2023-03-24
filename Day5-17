@@ -1,0 +1,5 @@
+while(correct_answers < 5) {   num1 <- sample(2:12, 1)   num2 <- sample(2:12, 1) 
+   
+  cat(paste("What is", num1, "x", num2, "? "))   user_answer <- as.integer(readline())   if(user_answer == num1 * num2) {     correct_answers <- correct_answers + 1     cat("Correct!\n") 
+  } else {     cat("Incorrect. The correct answer is", num1 * num2, "\n") 
+  } } cat("Congratulations! You got 5 correct answers.\n") 
