@@ -1,0 +1,11 @@
+e. Write a R program to create a list containing a vector, a matrix and a list and give names to the
+elements in the list. Access and print the first and second element of the list
+SOURCE CODE:
+vec <- c(1, 2, 3) mat <- matrix(1:9, nrow=3) lst <- list(a=1, b=2, c=3) 
+ 
+ 
+my_list <- list(my_vector=vec, my_matrix=mat, my_list=lst) 
+ 
+# Print the first and second elements of the list 
+print(my_list$my_vector) 
+print(my_list$my_matrix) 
