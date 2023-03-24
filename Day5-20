@@ -1,0 +1,17 @@
+SOURCE CODE:
+
+movies <- c("SPYDERMAN", "BATMAN", "VERTIGO", "CHINATOWN") 
+> l <-lapply(movies,tolower) 
+> l 
+[[1]] 
+[1] "spyderman" 
+[[2]] 
+[1] "batman" 
+[[3]] 
+[1] "vertigo" 
+[[4]] 
+[1] "chinatown" 
+> s <- sapply(movies,tolower) 
+> s 
+  SPYDERMAN      BATMAN     VERTIGO   CHINATOWN  
+"spyderman"    "batman"   "vertigo" "chinatown"  
