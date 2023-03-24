@@ -1,0 +1,5 @@
+> for(i in d){ 
++ if(i>6000){ 
++ li<- list.append(i) 
++ } 
+} 
