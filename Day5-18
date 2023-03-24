@@ -1,0 +1,1 @@
+male_regno <- seq(from = 191611258, to = 191611272) female_regno <- seq(from = 191611273, to = 191611287) attendance_df <- data.frame(regno = c(male_regno, female_regno), gender = c(rep("MALE", length(male_regno)), rep("FEMALE", length(female_regno))),  attendance = rep("ABSENT", 30)) attendance_df$attendance <- "PRESENT" attendance_df 
