@@ -1,0 +1,158 @@
+1. (i) Write a function in R programming to print generate Fibonacci sequence using  
+Recursion in R
+ .fibonacci <- function(n) {
+  if (n <= 1) {
+    return(n)
+  } else {
+    return(fibonacci(n-1) + fibonacci(n-2))
+  }
+}
+for (i in 0:9) {
+  print(fibonacci(i))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+(ii) Find sum of natural numbers up-to 10, without formula using loop statement.
+
+sum = 0
+for i in range(1, 11):
+    sum += i
+
+print("The sum of natural numbers up to 10 is:", sum)
+
+OUTPUT:
+
+The sum of natural numbers up to 10 is: 55
+
+
+
+
+
+
+
+
+
+
+
+(iii) create a vector 1:10 and Find a square of each number and store that in a
+separate list.
+# Create a vector of numbers 1 to 10
+vector = list(range(1, 11))
+
+# Create an empty list to store the squares
+squares = []
+
+# Find the square of each number in the vector and append it to the squares list
+for num in vector:
+    square = num ** 2
+    squares.append(square)
+
+# Print the vector and squares lists
+print("Vector:", vector)
+print("Squares:", squares)
+
+
+OUTPUT:
+
+Vector: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Squares: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+
+
+2.    (motor trend car road test) comprises fuel consumption, performance and  10 aspects of automobile
+design for 32 automobiles. It comes pre-installed  with  package in R.
+ (i)Find the dimension of the dataset
+(ii)Give the statistical summary of the features.
+(iii)Print the categorical features in Dataset
+(iv)Find the average weight(wt) grouped by Engine shape(vs)
+(v)Find the largest and smallest value of the variable weight with respect to Engine shape  
+
+
+> dim(mtcars)[1] 32 11> summary(mtcars)      mpg             cyl             disp             hp             drat             wt       
+ Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0   Min.   :2.760   Min.   :1.513  
+ 1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5   1st Qu.:3.080   1st Qu.:2.581  
+ Median :19.20   Median :6.000   Median :196.3   Median :123.0   Median :3.695   Median :3.325  
+ Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7   Mean   :3.597   Mean   :3.217  
+ 3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0   3rd Qu.:3.920   3rd Qu.:3.610  
+ Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0   Max.   :4.930   Max.   :5.424  
+      qsec             vs               am              gear            carb      
+ Min.   :14.50   Min.   :0.0000   Min.   :0.0000   Min.   :3.000   Min.   :1.000  
+ 1st Qu.:16.89   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  
+ Median :17.71   Median :0.0000   Median :0.0000   Median :4.000   Median :2.000  
+ Mean   :17.85   Mean   :0.4375   Mean   :0.4062   Mean   :3.688   Mean   :2.812  
+ 3rd Qu.:18.90   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  
+ Max.   :22.90   Max.   :1.0000   Max.   :1.0000   Max.   :5.000   Max.   :8.000  > cat_cols <- c("cyl", "vs", "am", "gear")> mtcars[, cat_cols]                    cyl vs am gear
+Mazda RX4             6  0  1    4
+Mazda RX4 Wag         6  0  1    4
+Datsun 710            4  1  1    4
+Hornet 4 Drive        6  1  0    3
+Hornet Sportabout     8  0  0    3
+Valiant               6  1  0    3
+Duster 360            8  0  0    3
+Merc 240D             4  1  0    4
+Merc 230              4  1  0    4
+Merc 280              6  1  0    4
+Merc 280C             6  1  0    4
+Merc 450SE            8  0  0    3
+Merc 450SL            8  0  0    3
+Merc 450SLC           8  0  0    3
+Cadillac Fleetwood    8  0  0    3
+Lincoln Continental   8  0  0    3
+Chrysler Imperial     8  0  0    3
+Fiat 128              4  1  1    4
+Honda Civic           4  1  1    4
+Toyota Corolla        4  1  1    4
+Toyota Corona         4  1  0    3
+Dodge Challenger      8  0  0    3
+AMC Javelin           8  0  0    3
+Camaro Z28            8  0  0    3
+Pontiac Firebird      8  0  0    3
+Fiat X1-9             4  1  1    4
+Porsche 914-2         4  0  1    5
+Lotus Europa          4  1  1    5
+Ford Pantera L        8  0  1    5
+Ferrari Dino          6  0  1    5
+Maserati Bora         8  0  1    5
+Volvo 142E            4  1  1    4> > aggregate(wt ~ vs, data = mtcars, mean)  vs       wt
+1  0 3.688556
+2  1 2.611286> > > aggregate(wt ~ vs, data = mtcars, max)  vs    wt
+1  0 5.424
+2  1 3.460> aggregate(wt ~ vs, data = mtcars, min)  vs    wt
+1  0 2.140
+2  1 1.513
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
